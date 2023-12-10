@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GYM-client/static/css/main.e6c13ad2.css",
+    "main.js": "/GYM-client/static/js/main.445a96a1.js",
+    "index.html": "/GYM-client/index.html",
+    "main.e6c13ad2.css.map": "/GYM-client/static/css/main.e6c13ad2.css.map",
+    "main.445a96a1.js.map": "/GYM-client/static/js/main.445a96a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.445a96a1.js"
+  ]
+}
