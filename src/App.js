@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom"
+import Home from './scenes/Home';
+import QR_scanner from './scenes/QR_scanner';
+import MyPage from './scenes/MyPage';
+import Result from './scenes/Result';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app' style={{backgroundColor: '#242424 '}}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/qr' element={<QR_scanner/>}/>
+          <Route path='/result' element={<Result/>}/>
+          <Route path='/mypage' element={<MyPage/>}/>
+        </Routes>
+      </BrowserRouter>
+     
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
