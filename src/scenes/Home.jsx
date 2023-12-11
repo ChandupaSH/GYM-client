@@ -12,6 +12,8 @@ const Home = () => {
       <div style={{width: '100%' }}>
           <SlideShow></SlideShow>
         </div>
+
+        <label>changed</label>
     </div>
   )
 }
